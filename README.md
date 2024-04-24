@@ -89,7 +89,7 @@ Name <a href=https://en.wikipedia.org/wiki/G._Warren_Nutter>Warren Nutter</a>
 Work: Collapse of USSR))
 jb51((Location: University of TN
 Name: <a href=https://en.wikipedia.org/wiki/James_M._Buchanan>James Buchanan</a>
-Work: <a href= public finance >Public Finance</a>))
+Work: <a href=https://en.wikipedia.org/wiki/Public_finance >Public Finance</a>))
 end
 wn46 -->wn51
 jb46 -->jb51
