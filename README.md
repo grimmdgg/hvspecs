@@ -44,4 +44,4 @@ p <--https-OpenAPI--> api;
 
 **Dynamic visual representation of historical timeline**
 
-
+[Original Spec](images/original_spec.jpg)
