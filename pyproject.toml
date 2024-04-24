@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hvspecs"
+version = "0.1.0"
+description = ""
+authors = ["grimmdgg <grimmdgg@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hvspecs_api"},{include = "hvspecs_ui"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.2"
+justpy = "^0.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
