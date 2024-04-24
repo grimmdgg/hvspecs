@@ -49,14 +49,52 @@ Bubbles
 - Date Range
 - Geographical Location/ Institution
 - Principle Subject Author
-- Significant Achievement
-- List of related Articles
+- Significant Achievement/Work
 
 Bubble behavior:
 - organized along a vertical time axis
-- generated dynamically based on the search criteria
+- generated dynamically based on search criteria
 - will collapse (effervesce) into larger bubbles when bubble data intersects
 
-
+Bubble Examples
+```mermaid
+graph TD
+subgraph 1946;
+ jb46((Location: University of Chicago
+        Name: <a href=https://en.wikipedia.org/wiki/James_M._Buchanan>James Buchanan</a>
+        Work: Grad Student
+        ))
+ wn46((Location: University of Chicago
+ Name: <a href=https://en.wikipedia.org/wiki/G._Warren_Nutter>Warren Nutter</a>
+ Work: Grad Student ))
+end
+```
+The above bubbles should collapse to:
+```mermaid
+graph TD
+subgraph 1946;
+subgraph  University of Chicago
+ jb46((
+        Name: <a href=https://en.wikipedia.org/wiki/James_M._Buchanan>James Buchanan</a>
+        Work: Grad Student
+        ))
+ wn46((
+ Name: <a href=https://en.wikipedia.org/wiki/G._Warren_Nutter>Warren Nutter</a>
+ Work: Grad Student ))
+end
+end
+subgraph 1951
+wn51((Location: US Dept of State
+Name <a href=https://en.wikipedia.org/wiki/G._Warren_Nutter>Warren Nutter</a>
+Work: Collapse of USSR))
+jb51((Location: University of TN
+Name: <a href=https://en.wikipedia.org/wiki/James_M._Buchanan>James Buchanan</a>
+Work: <a href= public finance >Public Finance</a>))
+end
+wn46 -->wn51
+jb46 -->jb51
+```
+** please note:
+These diagrams were created with [mermaid](https://mermaid.js.org/) as examples and do not fully represent the desired final presentation of the bubble data.
 
 [Original Specification](images/original_spec.jpg)
