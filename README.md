@@ -44,4 +44,19 @@ p <--https-OpenAPI--> api;
 
 **Dynamic visual representation of historical timeline**
 
-[Original Spec](images/original_spec.jpg)
+The dynamic visual representation will be based on a data structure called a bubble.  Each bubble will have the following structure:
+Bubbles
+- Date Range
+- Geographical Location/ Institution
+- Principle Subject Author
+- Significant Achievement
+- List of related Articles
+
+Bubble behavior:
+- organized along a vertical time axis
+- generated dynamically based on the search criteria
+- will collapse (effervesce) into larger bubbles when bubble data intersects
+
+
+
+[Original Specification](images/original_spec.jpg)
