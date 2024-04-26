@@ -12,7 +12,7 @@ HVSPECS is a definitive system of record and research collaboration tool for the
 
 Development of a collaborative online platform within which an extensive and continually growing team of authors can work together to document, categorize, and publish the thousands of articles, past, present, and future, which make up the historical output of the Virginia School. 
 
-**Scope** 
+**Scope**
 This system will provide mechanisms for the following:
 - Uploading, categorizing, indexing, and searching for articles and publications relating to the Virginia School of Political Economy.  
 - Managing contributing authors/users and associated credentials
@@ -44,7 +44,7 @@ p <--https-OpenAPI--> api;
 
 **Dynamic visual representation of historical timeline**
 
-The dynamic visual representation will be based on a data structure called a bubble.  Each bubble will have the following structure: 
+The dynamic visual representation will be based on a data structure called a bubble.  Each bubble will have the following structure:
 Bubbles
 - Date Range
 - Geographical Location/ Institution
@@ -71,6 +71,23 @@ end
 ```
 The above bubbles should collapse to:
 ```mermaid
+graph 
+subgraph 1946;
+subgraph  University of Chicago
+ jb46((
+        Name: <a href=https://en.wikipedia.org/wiki/James_M._Buchanan>James Buchanan</a>
+        Work: Grad Student
+        ))
+ wn46((
+ Name: <a href=https://en.wikipedia.org/wiki/G._Warren_Nutter>Warren Nutter</a>
+ Work: Grad Student ))
+end
+end
+
+```
+Example with longer timeline:
+
+```mermaid
 graph TD
 subgraph 1946;
 subgraph  University of Chicago
@@ -93,6 +110,25 @@ Work: <a href=https://en.wikipedia.org/wiki/Public_finance >Public Finance</a>))
 end
 wn46 -->wn51
 jb46 -->jb51
+subgraph 1953
+jb53((Location: Florida State
+Name:<a href=https://en.wikipedia.org/wiki/James_M._Buchanan>James Buchanan</a> 
+Work: Public Choice))
+end
+jb51-->jb53
+
+subgraph 1960
+       subgraph The University of Virginia
+       jb60((Name: <a href=https://en.wikipedia.org/wiki/James_M._Buchanan>James Buchanan</a> 
+       Work: ??))
+       wn60((Name: <a href=https://en.wikipedia.org/wiki/G._Warren_Nutter>Warren Nutter</a>
+       Work: ??))
+       gt60((Name: <a href=https://en.wikipedia.org/wiki/Gordon_Tullock>Gordon Tullock</a>
+       Work: ??))
+       end
+end
+jb53-->jb60
+wn51 -->wn60
 ```
 ** please note:
 These diagrams were created with [mermaid](https://mermaid.js.org/) as examples and do not fully represent the desired final presentation of the bubble data.
