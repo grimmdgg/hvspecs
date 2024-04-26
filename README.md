@@ -12,7 +12,7 @@ HVSPECS is a definitive system of record and research collaboration tool for the
 
 Development of a collaborative online platform within which an extensive and continually growing team of authors can work together to document, categorize, and publish the thousands of articles, past, present, and future, which make up the historical output of the Virginia School. 
 
-**Scope**
+**Scope** 
 This system will provide mechanisms for the following:
 - Uploading, categorizing, indexing, and searching for articles and publications relating to the Virginia School of Political Economy.  
 - Managing contributing authors/users and associated credentials
@@ -44,7 +44,7 @@ p <--https-OpenAPI--> api;
 
 **Dynamic visual representation of historical timeline**
 
-The dynamic visual representation will be based on a data structure called a bubble.  Each bubble will have the following structure:
+The dynamic visual representation will be based on a data structure called a bubble.  Each bubble will have the following structure: 
 Bubbles
 - Date Range
 - Geographical Location/ Institution
