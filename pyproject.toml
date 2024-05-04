@@ -10,7 +10,16 @@ packages = [{include = "hvspecs_api"},{include = "hvspecs_ui"}]
 python = "^3.10"
 fastapi = "^0.110.2"
 justpy = "^0.14.0"
+pandas = "^2.2.2"
+plotly = "^5.22.0"
+nbformat = "^5.10.4"
+matplotlib = "^3.8.4"
+networkx = "^3.3"
+py2neo = "^2021.2.4"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
 
 [build-system]
 requires = ["poetry-core"]
